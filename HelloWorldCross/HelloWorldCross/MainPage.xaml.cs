@@ -13,5 +13,11 @@ namespace HelloWorldCross
         {
             InitializeComponent();
         }
+
+        void OnButtonClicked(object sender, EventArgs args)
+        {
+            App.Current.MainPage = new Preferences();
+
+        }
     }
 }

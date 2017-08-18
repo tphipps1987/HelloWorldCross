@@ -4,8 +4,15 @@
              xmlns:local="clr-namespace:HelloWorldCross"
              x:Class="HelloWorldCross.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout>
+        
+        <Label Text="Hello World!" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="Center" />
 
+        <Button Text="Click Me!"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonClicked" />
+    </StackLayout>
 </ContentPage>
